@@ -11,7 +11,9 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder(toBuilder = true)
-public abstract class BaseResponse {
+public abstract class BaseResponse<T> {
+
+    private T id;
 
     private LocalDateTime createdAt;
 

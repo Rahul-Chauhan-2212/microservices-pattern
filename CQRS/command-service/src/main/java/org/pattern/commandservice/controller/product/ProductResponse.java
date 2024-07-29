@@ -8,15 +8,12 @@ import org.pattern.commandservice.controller.BaseResponse;
 import org.pattern.commandservice.domain.common.Extension;
 
 import java.util.List;
-import java.util.UUID;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder(toBuilder = true)
-public class ProductResponse extends BaseResponse {
-
-    private UUID productId;
+public class ProductResponse extends BaseResponse<String> {
 
     private String productCode;
 
